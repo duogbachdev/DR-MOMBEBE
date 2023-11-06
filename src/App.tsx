@@ -3,9 +3,9 @@ import HomePage from '~/pages/Web'
 
 function App() {
   return (
-    <>
+    <div className='font-Inter'>
       <HomePage />
-    </>
+    </div>
   )
 }
 
