@@ -22,8 +22,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className='bg-[#2F4B24] flex justify-around pt-10 pb-14'>
-        <div className='pt-2'>
+      <div className='bg-[#2F4B24] flex flex-col lg:flex-row lg:justify-around pl-5 xl:pl-0 pt-10 pb-14 relative'>
+        <div className='pt-2 mb-6 lg:mb-0'>
           <svg xmlns='http://www.w3.org/2000/svg' width='175' height='77' viewBox='0 0 175 77' fill='none'>
             <path
               d='M112.682 27.0848C109.752 25.1931 105.401 25.3436 105.401 25.3436C105.401 25.3436 110.786 21.4528 114.254 19.4106C117.722 17.3685 122.181 18.5293 124.206 21.9687C126.252 25.4296 124.723 28.8475 122.353 30.2448C119.424 31.9645 116.236 29.3634 112.682 27.0848Z'
@@ -88,12 +88,19 @@ const Footer = () => {
           </svg>
         </div>
 
-        <div className='text-base not-italic leading-6 text-[#FFFAF5]'>
+        <div className='text-base not-italic leading-6 text-[#FFFAF5] mb-6 lg:mb-0'>
           <h3 className='font-bold text-lg mb-4'>Liên hệ</h3>
           <ul className='flex flex-col gap-2'>
-            <li className='font-semibold uppercase'>Công ty cổ phần phát triển GH Health</li>
+            <li className='font-semibold uppercase hidden lg:block'>Công ty cổ phần phát triển GH Health</li>
             <li className='flex items-center gap-3'>
-              <svg xmlns='http://www.w3.org/2000/svg' width='16' height='18' viewBox='0 0 16 18' fill='none'>
+              <svg
+                className='hidden lg:block'
+                xmlns='http://www.w3.org/2000/svg'
+                width='16'
+                height='18'
+                viewBox='0 0 16 18'
+                fill='none'
+              >
                 <path
                   fill-rule='evenodd'
                   clip-rule='evenodd'
@@ -116,7 +123,14 @@ const Footer = () => {
               <p>Xóm Tràng, xã Thanh Liệt, huyện Thanh Trì, TP. Hà Nội, Việt Nam</p>
             </li>
             <li className='flex items-center gap-3'>
-              <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
+              <svg
+                className='hidden lg:block'
+                xmlns='http://www.w3.org/2000/svg'
+                width='20'
+                height='20'
+                viewBox='0 0 20 20'
+                fill='none'
+              >
                 <path
                   fill-rule='evenodd'
                   clip-rule='evenodd'
@@ -130,7 +144,14 @@ const Footer = () => {
               <p>0243.9963333</p>
             </li>
             <li className='flex items-center gap-3'>
-              <svg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18' fill='none'>
+              <svg
+                className='hidden lg:block'
+                xmlns='http://www.w3.org/2000/svg'
+                width='20'
+                height='18'
+                viewBox='0 0 20 18'
+                fill='none'
+              >
                 <path
                   d='M14.919 6.37646L11.2163 9.38733C10.5167 9.94233 9.53244 9.94233 8.83286 9.38733L5.09888 6.37646'
                   stroke='#FCFCFD'
@@ -153,7 +174,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className='text-base not-italic leading-6 text-[#FFFAF5]'>
+        <div className='hidden xl:block text-base not-italic leading-6 text-[#FFFAF5]'>
           <h3 className='font-bold text-lg mb-4'>Chính sách</h3>
           <ul className='flex flex-col gap-2'>
             <li>Chính sách bảo mật</li>
@@ -164,9 +185,9 @@ const Footer = () => {
         </div>
 
         <div className='text-base not-italic leading-6 text-[#FFFAF5]'>
-          <h3 className='font-bold text-lg mb-4'>Bài viết mới</h3>
+          <h3 className='hidden xl:block font-bold text-lg mb-4'>Bài viết mới</h3>
           <ul>
-            <li className='mb-12'>Thế nào là dược liệu quý hiểm?</li>
+            <li className='hidden xl:block mb-12'>Thế nào là dược liệu quý hiểm?</li>
           </ul>
           <div className='flex items-center gap-3 mb-10'>
             <p className='bg-[#F1EEE6] w-11 h-11 rounded-full flex items-center justify-center'>
@@ -285,8 +306,22 @@ const Footer = () => {
             </p>
           </div>
 
-          <img src={BCT} alt='thong-bao-BCT' />
+          <img className='block xl:hidden' src={BCT} alt='thong-bao-BCT' />
         </div>
+
+        <svg
+          className='absolute right-0 -top-3.5 w-80 md:w-[40%]'
+          xmlns='http://www.w3.org/2000/svg'
+          width='743'
+          height='27'
+          viewBox='0 0 743 27'
+          fill='none'
+        >
+          <path
+            d='M824.755 6.97992C822.654 6.37878 820.798 5.58649 818.37 5.22441C800.962 2.9295 783.314 1.39403 765.306 1.47129C757.001 1.4814 748.694 1.25473 740.511 0.979839C726.364 0.509417 712.138 0.418428 698.12 0.799598C636.83 2.40777 575.496 3.68472 514.21 6.00326C445.279 8.56416 376.178 10.3211 307.027 10.8944C278.167 11.1415 249.31 11.9095 220.404 11.6833C193.185 11.4928 165.937 12.9601 138.67 11.7753C129.704 11.3638 120.575 11.1902 111.489 11.1583C97.5916 11.1124 83.7713 10.2608 69.8374 10.8309C67.7002 10.9404 65.5216 11.0028 63.4242 10.9226C48.825 10.408 34.184 9.79889 19.64 11.3204C13.3952 11.9793 6.77803 12.3092 2.19342 15.2299C-0.712788 17.0971 -0.416151 18.3738 3.82434 19.1969C8.59961 20.0637 13.5387 20.8347 18.5567 21.1315C36.0788 22.1942 53.7927 21.2665 71.4313 21.3339C87.1787 21.4143 102.969 21.7786 118.754 21.3379C125.29 21.1506 132.076 21.3878 138.738 21.6732C150.953 22.2517 163.167 22.6881 175.459 22.461C177.062 22.4499 178.706 22.2964 180.228 22.4753C195.288 24.1708 210.615 23.0228 225.789 23.3914C237.468 23.6895 249.272 24.3655 261.026 23.5738C262.053 23.5193 263.205 23.5587 264.233 23.6937C272.381 24.7266 280.765 24.1476 288.947 24.2804C307.04 24.6288 325.207 23.7927 343.338 23.7146C365.991 23.6525 388.73 24.0161 411.419 23.054C417.79 22.7731 424.203 22.776 430.576 22.6846C441.963 22.4637 453.354 22.8585 464.782 22.4952C504.613 21.225 544.574 20.9958 584.316 18.6369C598.289 17.7825 612.394 18.2532 626.455 18.2032C645.45 18.1665 670.704 23.9439 689.694 23.2441C727.098 21.8486 761.289 28.1396 798.694 26.7441C806.463 26.5483 811.355 13.5137 819.083 13.2707C820.686 13.2123 822.536 13.1995 823.767 12.7647C826.146 11.9431 830.007 11.4902 830.16 9.78414C830.274 8.45725 827.144 7.62643 824.755 6.97992Z'
+            fill='#B3C571'
+          />
+        </svg>
       </div>
       <div className='bg-[#01140B] pt-3 py-1 flex flex-col gap-2 text-base not-italic leading-6 text-[#FFFAF5] font-normal text-center capitalize'>
         <p>
