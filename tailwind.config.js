@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         Inter: ['Inter', 'sans-serif']
+      },
+      backgroundImage: {
+        'slider-bg': 'url("~/assets/img/Slider/BannerSlider.png")'
       }
     }
   },
