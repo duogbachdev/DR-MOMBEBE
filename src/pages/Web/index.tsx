@@ -4,10 +4,10 @@ import Header from '~/components/Web/Header/Header'
 
 const HomePage = () => {
   return (
-    <div className='bg-slate-500'>
+    <div className='bg-[#FCFCFD]'>
       <Header />
 
-      <p className='border-blue-400 border-b-2'>Main</p>
+      <p className=''>Main</p>
 
       <Footer />
     </div>
