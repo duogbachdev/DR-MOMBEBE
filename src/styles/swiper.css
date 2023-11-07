@@ -20,3 +20,14 @@
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button-prev {
+  color: #537b32;
+}
+.swiper-button-next {
+  color: #537b32;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #537b32;
+}

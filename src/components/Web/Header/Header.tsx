@@ -9,8 +9,8 @@ const Header = () => {
     <div className='xl:bg-[#40652F] py-4 px-4 xl:px-0 flex items-center justify-between xl:justify-around'>
       <div className='block xl:hidden'>
         <svg className='w-6' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'>
-          <path d='M4 16H20' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
-          <path d='M4 8H20' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+          <path d='M4 16H20' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
+          <path d='M4 8H20' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
         </svg>
       </div>
 
