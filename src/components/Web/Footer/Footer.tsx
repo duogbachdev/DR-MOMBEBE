@@ -102,22 +102,22 @@ const Footer = () => {
                 fill='none'
               >
                 <path
-                  fill-rule='evenodd'
-                  clip-rule='evenodd'
+                  fillRule='evenodd'
+                  clipRule='evenodd'
                   d='M10.2916 7.62563C10.2916 6.35946 9.26562 5.3335 8.00038 5.3335C6.73422 5.3335 5.70825 6.35946 5.70825 7.62563C5.70825 8.89086 6.73422 9.91683 8.00038 9.91683C9.26562 9.91683 10.2916 8.89086 10.2916 7.62563Z'
                   stroke='#FCFCFD'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
                 <path
-                  fill-rule='evenodd'
-                  clip-rule='evenodd'
+                  fillRule='evenodd'
+                  clipRule='evenodd'
                   d='M7.99955 17.25C6.90095 17.25 1.125 12.5735 1.125 7.68302C1.125 3.85442 4.20234 0.75 7.99955 0.75C11.7968 0.75 14.875 3.85442 14.875 7.68302C14.875 12.5735 9.09816 17.25 7.99955 17.25Z'
                   stroke='#FCFCFD'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
               </svg>
               <p>Xóm Tràng, xã Thanh Liệt, huyện Thanh Trì, TP. Hà Nội, Việt Nam</p>
@@ -132,13 +132,13 @@ const Footer = () => {
                 fill='none'
               >
                 <path
-                  fill-rule='evenodd'
-                  clip-rule='evenodd'
+                  fillRule='evenodd'
+                  clipRule='evenodd'
                   d='M9.57084 10.4333C13.2275 14.089 14.057 9.85982 16.3853 12.1864C18.6298 14.4304 19.9199 14.8799 17.0761 17.723C16.7198 18.0093 14.4566 21.4534 6.50263 13.5017C-1.45227 5.54899 1.98987 3.2834 2.27622 2.92728C5.12696 0.0763507 5.56879 1.37393 7.81336 3.61788C10.1416 5.94545 5.91418 6.77771 9.57084 10.4333Z'
                   stroke='#FCFCFD'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
               </svg>
               <p>0243.9963333</p>
@@ -155,18 +155,18 @@ const Footer = () => {
                 <path
                   d='M14.919 6.37646L11.2163 9.38733C10.5167 9.94233 9.53244 9.94233 8.83286 9.38733L5.09888 6.37646'
                   stroke='#FCFCFD'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
                 <path
-                  fill-rule='evenodd'
-                  clip-rule='evenodd'
+                  fillRule='evenodd'
+                  clipRule='evenodd'
                   d='M14.0908 16.5005C16.6253 16.5075 18.3334 14.4251 18.3334 11.8658V6.14217C18.3334 3.58284 16.6253 1.50049 14.0908 1.50049H5.90936C3.3749 1.50049 1.66675 3.58284 1.66675 6.14217V11.8658C1.66675 14.4251 3.3749 16.5075 5.90936 16.5005H14.0908Z'
                   stroke='#FCFCFD'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
               </svg>
               <p>ghhealth.co@gmail.com</p>
@@ -192,7 +192,7 @@ const Footer = () => {
           <div className='flex items-center gap-3 mb-10'>
             <p className='bg-[#F1EEE6] w-11 h-11 rounded-full flex items-center justify-center'>
               <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'>
-                <g clip-path='url(#clip0_74_6127)' filter='url(#filter0_i_74_6127)'>
+                <g clipPath='url(#clip0_74_6127)' filter='url(#filter0_i_74_6127)'>
                   <path
                     d='M16.1192 12.3753L16.7304 8.39398H12.9099V5.81035C12.9099 4.72135 13.4434 3.65916 15.1546 3.65916H16.8913V0.269789C16.8913 0.269789 15.3155 0.000976562 13.8085 0.000976562C10.6625 0.000976562 8.6062 1.9081 8.6062 5.36004V8.39466H5.10889V12.376H8.6062V22.001H12.9099V12.376L16.1192 12.3753Z'
                     fill='#84A95A'
@@ -206,9 +206,9 @@ const Footer = () => {
                     width='22'
                     height='26'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'
+                    colorInterpolationFilters='sRGB'
                   >
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
                     <feColorMatrix
                       in='SourceAlpha'
@@ -230,7 +230,7 @@ const Footer = () => {
             </p>
             <p className='bg-[#F1EEE6] w-11 h-11 rounded-full flex items-center justify-center'>
               <svg xmlns='http://www.w3.org/2000/svg' width='23' height='22' viewBox='0 0 23 22' fill='none'>
-                <g clip-path='url(#clip0_74_6129)' filter='url(#filter0_i_74_6129)'>
+                <g clipPath='url(#clip0_74_6129)' filter='url(#filter0_i_74_6129)'>
                   <path
                     d='M22.5208 5.96523C22.3906 5.52086 22.1369 5.11854 21.7867 4.80106C21.4267 4.47381 20.9854 4.23973 20.5045 4.12089C18.7047 3.66714 11.4942 3.66714 11.4942 3.66714C8.48826 3.63443 5.48302 3.77831 2.49548 4.09798C2.01458 4.22559 1.5741 4.46491 1.21323 4.79464C0.858648 5.12098 0.601814 5.52339 0.467648 5.96431C0.145354 7.62508 -0.011239 9.31138 -1.88843e-05 11.0005C-0.0115189 12.6881 0.144689 14.3738 0.467648 16.0366C0.598939 16.4757 0.854814 16.8763 1.21036 17.1999C1.5659 17.5235 2.00865 17.7572 2.49548 17.881C4.31919 18.3338 11.4942 18.3338 11.4942 18.3338C14.504 18.3666 17.5131 18.2227 20.5045 17.903C20.9854 17.7841 21.4267 17.5501 21.7867 17.2228C22.1413 16.8992 22.3934 16.4968 22.5199 16.0586C22.8506 14.3985 23.0114 12.7115 23 11.0216C23.0249 9.32445 22.8643 7.62949 22.5208 5.96431V5.96523ZM9.2019 14.1391V7.86273L15.2011 11.0014L9.2019 14.1391Z'
                     fill='#84A95A'
@@ -244,9 +244,9 @@ const Footer = () => {
                     width='23'
                     height='26'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'
+                    colorInterpolationFilters='sRGB'
                   >
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
                     <feColorMatrix
                       in='SourceAlpha'
@@ -268,7 +268,7 @@ const Footer = () => {
             </p>
             <p className='bg-[#F1EEE6] w-11 h-11 rounded-full flex items-center justify-center'>
               <svg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'>
-                <g clip-path='url(#clip0_74_6133)' filter='url(#filter0_i_74_6133)'>
+                <g clipPath='url(#clip0_74_6133)' filter='url(#filter0_i_74_6133)'>
                   <path
                     d='M9.92041 0.0165195C10.9565 0.000488281 11.9867 0.00998828 13.0156 0.000488281C13.078 1.21233 13.5138 2.44674 14.4009 3.30352C15.2861 4.18168 16.5384 4.58364 17.7567 4.71961V7.90746C16.6149 7.87005 15.4678 7.63255 14.4317 7.14093C13.9805 6.93668 13.5601 6.67364 13.1486 6.40468C13.1433 8.71793 13.1581 11.0282 13.1338 13.332C13.072 14.4387 12.7069 15.5401 12.0633 16.4521C11.0278 17.9703 9.23048 18.9601 7.38451 18.991C6.25223 19.0557 5.12113 18.747 4.15629 18.1781C2.55732 17.2353 1.43216 15.5092 1.26829 13.6567C1.24765 13.2644 1.24448 12.8714 1.25879 12.4787C1.40129 10.9724 2.14644 9.53136 3.30307 8.55108C4.61407 7.4093 6.45054 6.86543 8.17004 7.18724C8.18607 8.35989 8.13916 9.53136 8.13916 10.704C7.35363 10.4499 6.43569 10.5211 5.74932 10.9979C5.24715 11.3287 4.86766 11.8155 4.66929 12.3831C4.50541 12.7845 4.55232 13.2304 4.56182 13.6567C4.75004 14.9559 5.99929 16.0478 7.33285 15.9296C8.21694 15.9201 9.06423 15.4071 9.52498 14.656C9.67401 14.393 9.84085 14.124 9.84976 13.8147C9.92754 12.3986 9.89666 10.9884 9.90616 9.57233C9.91269 6.38093 9.89666 3.19843 9.92101 0.0171133L9.92041 0.0165195Z'
                     fill='#84A95A'
@@ -282,9 +282,9 @@ const Footer = () => {
                     width='19'
                     height='23'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'
+                    colorInterpolationFilters='sRGB'
                   >
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
                     <feColorMatrix
                       in='SourceAlpha'
