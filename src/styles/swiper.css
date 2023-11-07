@@ -1,14 +1,30 @@
 .swiper-button-prev {
-  color: #537b32;
+  color: #84a95a;
 }
 .swiper-button-next {
-  color: #537b32;
+  color: #84a95a;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #537b32;
+  background-color: #84a95a;
+}
+
+.myProduct {
+  width: 382px;
 }
 
 .swiper-slide {
   overflow: hidden;
+}
+
+/* Đảm bảo rằng .swiper-wrapper và .swiper-slide vẫn có kích thước 100% */
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.myProductPadding {
+  flex: 0 0 calc(100% - 32px); /* 32px để bù đắp việc padding 16px ở cả hai bên */
+  margin: 0 16px; /* 16px ở cả hai bên trái và phải */
 }
