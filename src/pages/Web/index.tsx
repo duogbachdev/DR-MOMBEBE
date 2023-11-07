@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '~/components/Web/Footer/Footer'
 import Header from '~/components/Web/Header/Header'
 import BrandStory from '~/assets/img/BrandStory/BrandStory.jpg'
@@ -7,6 +7,14 @@ import Product from '~/assets/img/ProductLine/Product.png'
 import Product1 from '~/assets/img/ProductLine/Product1.png'
 import Product2 from '~/assets/img/ProductLine/Product2.png'
 import ProductSale from '~/assets/img/ProductLine/ProductSale.png'
+import Tree from '~/assets/img/StandardMedicinalHerb/Tree.png'
+import Rectangle from '~/assets/img/StandardMedicinalHerb/Rectangle.png'
+import Product_1 from '~/assets/img/StandardMedicinalHerb/Product.png'
+import Product_2 from '~/assets/img/StandardMedicinalHerb/Product1.png'
+import Product_3 from '~/assets/img/StandardMedicinalHerb/Product2.png'
+import bunch from '~/assets/img/StandardMedicinalHerb/bunch.png'
+import alternative from '~/assets/img/StandardMedicinalHerb/alternative.png'
+import AdobeStock from '~/assets/img/StandardMedicinalHerb/AdobeStock.png'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
@@ -19,6 +27,26 @@ import '~/styles/swiper.css'
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules'
 
 const HomePage = () => {
+  const [slidesPerView, setSlidesPerView] = useState<number>(1.5) // Giá trị mặc định
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1280px)')
+
+    const updateSlidesPerView = () => {
+      if (mediaQuery.matches) {
+        setSlidesPerView(2.5) // Cho màn hình "xl"
+      } else {
+        setSlidesPerView(1) // Cho các màn hình khác
+      }
+    }
+
+    mediaQuery.addEventListener('change', updateSlidesPerView) // Theo dõi thay đổi kích thước màn hình ban đầu
+    updateSlidesPerView() // Khởi chạy ban đầu
+
+    return () => {
+      mediaQuery.removeEventListener('change', updateSlidesPerView) // Ngừng theo dõi khi unmount
+    }
+  }, [])
   return (
     <div className='bg-[#FCFCFD]'>
       <div className='absolute z-50 w-full'>
@@ -172,7 +200,7 @@ const HomePage = () => {
         </div>
 
         {/* Brand Story */}
-        <div className='brand-story xl:flex xl:px-32 xl:pb-[70px] xl:pt-[83px] xl:justify-center gap-7 bg-[#F2F4F7]'>
+        <div className='brand-story xl:flex xl:pb-[70px] xl:pt-[83px] xl:justify-center gap-7 bg-[#F2F4F7]'>
           <div className='hidden xl:block brand-story-right'>
             <img className='rounded-xl w-[584px] h-auto' src={BrandStory} alt='brand-story' />
           </div>
@@ -365,8 +393,7 @@ const HomePage = () => {
                   Dầu gội thảo dược DrMombebe
                 </p>
                 <p className='px-6 text-[#FD853A] text-base not-italic font-bold leading-6 mb-3'>
-                  235.000 đ{' '}
-                  <span className='text-[#537B32] text-sm font-normal decoration line-through'>235.000 đ</span>
+                  235.000 đ<span className='text-[#537B32] text-sm font-normal decoration line-through'>235.000 đ</span>
                 </p>
 
                 <p className='px-6 flex gap-2 pb-[22px]'>
@@ -500,6 +527,105 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Standard Medicinal Herbs */}
+      <div className='bg-[#F9FAFB] pt-[60px] pb-20'>
+        <div className='flex justify-center gap-10  mb-24'>
+          <div className='xl:max-w-[600px]'>
+            <h1 className='text-[#40652F] text-4xl not-italic font-bold leading-[44px] -tracking-[0.72px] mb-[18px] text-center xl:text-left'>
+              Dược liệu sạch đạt chuẩn
+            </h1>
+            <p className='text-[#344054] text-base not-italic font-normal leading-6 mb-2 px-4 xl:px-0'>
+              Bộ Sản phẩm cao cấp chăm sóc sức khỏe Mẹ & Bé thương hiệu DrMombebe với thành phần từ Bồ kết và Dược liệu
+              sạch đạt chuẩn, an toàn, lành tính.
+            </p>
+            <p className='text-[#344054] text-base not-italic font-normal leading-6 mb-2 px-4 xl:px-0'>
+              Thành phần Bồ kết - Một loại thảo dược quen thuộc được sử dụng từ hàng nghìn năm trong chăm sóc tóc, da.
+              Mái tóc dài, đen mượt trong câu ca của các bà, các mẹ gắn liền với hình ảnh quả bồ kết.
+            </p>
+            <p className='text-[#344054] text-base not-italic font-normal leading-6 mb-3 px-4 xl:px-0'>
+              Trong DrMombebe, quả Bồ kết sau khi thu hoạch từ vùng trồng được tinh chế giúp giữ trọn dược chất tinh túy
+              nhất là chất làm sạch tự nhiên da và tóc, giúp mượt tóc, ngăn gàu, giảm ngứa da đầu.
+            </p>
+            <div className='flex xl:block justify-center'>
+              <button
+                onClick={() => console.log('duogbachdev')}
+                className='text-[#2F4B24] border-[#40652F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+              >
+                Xem thêm
+              </button>
+            </div>
+          </div>
+          <div className='relative hidden'>
+            <img className='rounded-xl' src={Tree} alt='tree-image' />
+            <img className='rounded-xl absolute top-0' src={Rectangle} alt='tree-image' />
+
+            <div className='absolute flex top-28 right-20'>
+              <img className='' src={Product_1} alt='tree-image' />
+              <img className='' src={Product_2} alt='tree-image' />
+              <img className='' src={Product_3} alt='tree-image' />
+            </div>
+          </div>
+        </div>
+
+        <Swiper slidesPerView={slidesPerView} spaceBetween={30} className='px-44'>
+          <div className='flex flex-col'>
+            <SwiperSlide>
+              <div className='bg-[#40652F] rounded-xl'>
+                <img className='w-full rounded-t-xl mb-5' src={bunch} alt='' />
+                <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 pl-6 pr-14 text-justify mb-[18px]'>
+                  DrMombebe khi đạt độ sinh trưởng đảm bảo có hàm lượng hoạt chất cao nhất, được thu hái từ vùng trồng
+                  theo quy trình Thực hành trồng trọt và thu hái dược liệu theo tiêu chuẩn của Tổ chức y tế giới, trải
+                  qua quá trình làm sạch, sơ chế tại vùng trồng sau đó chuyển về nhà máy...
+                </p>
+                <div className='pl-6 pb-[42px]'>
+                  <button
+                    onClick={() => console.log('duogbachdev')}
+                    className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                  >
+                    Xem thêm
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='bg-[#537B32] rounded-xl'>
+                <img className='w-full rounded-t-xl mb-5' src={AdobeStock} alt='' />
+                <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 pl-6 pr-14 text-justify mb-[18px]'>
+                  Dầu gội thảo dược DrMombebe không chỉ đơn giản là một sản phẩm chăm sóc tóc thông thường. Đây là kết
+                  quả của một quá trình nghiên cứu tận tâm và chăm sóc đặc biệt, dành riêng cho phụ nữ mang thai và sau
+                  sinh. Quá trình này bắt đầu bằng việc nghiên cứu cơ cấu hoạt động của tóc và da đầu trong giai đoạn
+                  thai kỳ...
+                </p>
+                <div className='pl-6 pb-[42px]'>
+                  <button
+                    onClick={() => console.log('duogbachdev')}
+                    className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                  >
+                    Xem thêm
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='bg-[#40652F] rounded-xl h-[450px]'>
+                <img className='w-full rounded-t-xl mb-5 h-[205px]' src={alternative} alt='' />
+                <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 pl-6 pr-14 text-justify mb-[18px]'>
+                  Bồ kết được thu hái từ vùng trồng đạt chuẩn, sản xuất tại nhà máy Sao Thái Dương đạt chuẩn cGMP, Iso
+                  Mỗi năm, Lá thu hoạch hơn 10.000 tấn gừng, tạo công ăn việc làm cho hàng nghìn người lao động.
+                </p>
+                <div className='pl-6 pb-[42px]'>
+                  <button
+                    onClick={() => console.log('duogbachdev')}
+                    className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                  >
+                    Xem thêm
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          </div>
+        </Swiper>
+      </div>
       <Footer />
     </div>
   )

@@ -18,11 +18,11 @@
 }
 
 /* Đảm bảo rằng .swiper-wrapper và .swiper-slide vẫn có kích thước 100% */
-.swiper-wrapper {
+/* .swiper-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
-}
+} */
 
 .myProductPadding {
   flex: 0 0 calc(100% - 32px); /* 32px để bù đắp việc padding 16px ở cả hai bên */
