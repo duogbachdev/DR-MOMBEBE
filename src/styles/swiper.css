@@ -28,3 +28,7 @@
   flex: 0 0 calc(100% - 32px); /* 32px để bù đắp việc padding 16px ở cả hai bên */
   margin: 0 16px; /* 16px ở cả hai bên trái và phải */
 }
+.myStandardPadding {
+  flex: 0 0 calc(100% - 32px); /* 32px để bù đắp việc padding 16px ở cả hai bên */
+  margin: 0 16px; /* 16px ở cả hai bên trái và phải */
+}

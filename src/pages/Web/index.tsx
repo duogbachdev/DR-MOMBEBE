@@ -567,7 +567,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <Swiper slidesPerView={slidesPerView} spaceBetween={30} className='px-44'>
+        <Swiper slidesPerView={slidesPerView} spaceBetween={30} className='px-44 hidden xl:block'>
           <div className='flex flex-col'>
             <SwiperSlide>
               <div className='bg-[#40652F] rounded-xl'>
@@ -624,6 +624,63 @@ const HomePage = () => {
               </div>
             </SwiperSlide>
           </div>
+        </Swiper>
+
+        <Swiper pagination={true} modules={[Pagination]} className='myProduct xl:hidden w-[382px] px-4 md:px-0'>
+          <SwiperSlide className='myStandardPadding'>
+            <div className='bg-[#40652F] rounded-xl h-[450px]'>
+              <img className='w-full rounded-t-xl mb-5' src={bunch} alt='' />
+              <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 px-6 text-justify mb-[18px]'>
+                DrMombebe khi đạt độ sinh trưởng đảm bảo có hàm lượng hoạt chất cao nhất, được thu hái từ vùng trồng
+                theo quy trình Thực hành trồng trọt và thu hái dược liệu theo tiêu chuẩn của Tổ chức y tế giới, trải qua
+                quá trình làm sạch, sơ chế tại vùng trồng sau đó chuyển về nhà máy...
+              </p>
+              <div className='pl-6 pb-[42px]'>
+                <button
+                  onClick={() => console.log('duogbachdev')}
+                  className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='myStandardPadding'>
+            <div className='bg-[#40652F] rounded-xl h-[450px]'>
+              <img className='w-full rounded-t-xl mb-5' src={AdobeStock} alt='' />
+              <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 px-6 text-justify mb-[18px]'>
+                Dầu gội thảo dược DrMombebe không chỉ đơn giản là một sản phẩm chăm sóc tóc thông thường. Đây là kết quả
+                của một quá trình nghiên cứu tận tâm và chăm sóc đặc biệt, dành riêng cho phụ nữ mang thai và sau sinh.
+                Quá trình này bắt đầu bằng việc nghiên cứu cơ cấu hoạt động của tóc và da đầu trong giai đoạn thai kỳ...
+              </p>
+              <div className='pl-6 pb-[42px]'>
+                <button
+                  onClick={() => console.log('duogbachdev')}
+                  className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='myStandardPadding'>
+            <div className='bg-[#40652F] rounded-xl'>
+              <img className='w-full rounded-t-xl mb-5 h-[112px]' src={alternative} alt='' />
+              <p className='text-[#F1EEE6] text-base not-italic font-normal leading-6 px-6 text-justify mb-[18px]'>
+                DrMombebe khi đạt độ sinh trưởng đảm bảo có hàm lượng hoạt chất cao nhất, được thu hái từ vùng trồng
+                theo quy trình Thực hành trồng trọt và thu hái dược liệu theo tiêu chuẩn của Tổ chức y tế giới, trải qua
+                quá trình làm sạch, sơ chế tại vùng trồng sau đó chuyển về nhà máy...
+              </p>
+              <div className='pl-6 pb-[42px]'>
+                <button
+                  onClick={() => console.log('duogbachdev')}
+                  className='text-[#E2E69F] border-[#E2E69F] border font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6'
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       <Footer />
