@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        xs: '400px', // Iphone 5,6,7,8 thường
+      },
       fontFamily: {
         Inter: ['Inter', 'sans-serif']
       },
