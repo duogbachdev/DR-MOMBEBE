@@ -18,6 +18,8 @@ import alternative from '~/assets/img/StandardMedicinalHerb/alternative.png'
 import AdobeStock from '~/assets/img/StandardMedicinalHerb/AdobeStock.png'
 import CGMP from '~/assets/img/IconLogo/CGMP.png'
 import quality from '~/assets/img/IconLogo/quality.png'
+import news2 from '~/assets/img/New/news2.png'
+import news3 from '~/assets/img/New/news3.png'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
@@ -381,7 +383,7 @@ const HomePage = () => {
               <div className='relative border rounded-xl'>
                 <img className='mb-6' src={GroupImg} alt='image' />
                 <img
-                  className='absolute sm:top-28 sm:right-36 md:top-20 md:right-38 md:w-[39%] sm:w-[100px] w-[90px]'
+                  className='absolute top-[140px] right-[150px] md:top-20 md:right-38 md:w-[39%] sm:w-[100px] w-[90px]'
                   src={Product}
                   alt='image'
                 />
@@ -855,6 +857,39 @@ const HomePage = () => {
           <p className='text-lg not-italic font-bold leading-7 text-[#101828] text-center'>
             Giải vàng chất lượng quốc gia
           </p>
+        </div>
+      </div>
+
+      {/* News */}
+      <div className='bg-[#B3C571] flex justify-center gap-7 py-24 px-32'>
+        <div className='bg-news bg-cover bg-no-repeat bg-left-center w-[500px]'>abc</div>
+        <div className='flex flex-col gap-y-7'>
+          <div className='flex gap-7'>
+            <img src={news2} alt='' />
+            <div>
+              <h3>Dược liệu sạch đạt chuẩn Dược liệu sạch đạt chuẩn...</h3>
+              <p>
+                Thành phần Bồ kết - Một loại thảo dược quen thuộc được sử dụng từ hàng nghìn năm trong chăm sóc tóc, da.
+                Mái tóc dài, đen mượt trong...
+              </p>
+              <button className='bg-[#B3C571] text-[#2F4B24] font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6 hidden xl:block'>
+                Xem thêm
+              </button>
+            </div>
+          </div>
+          <div className='flex gap-7'>
+            <img src={news2} alt='' />
+            <div>
+              <h3>Dược liệu sạch đạt chuẩn Dược liệu sạch đạt chuẩn...</h3>
+              <p>
+                Thành phần Bồ kết - Một loại thảo dược quen thuộc được sử dụng từ hàng nghìn năm trong chăm sóc tóc, da.
+                Mái tóc dài, đen mượt trong...
+              </p>
+              <button className='bg-[#B3C571] text-[#2F4B24] font-semibold py-2 w-[176px] rounded-full text-base not-italic leading-6 hidden xl:block'>
+                Xem thêm
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
